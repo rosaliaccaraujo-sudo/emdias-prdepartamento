@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Obramax Atacado de Construção</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #ff6a00;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1581090700227-1e37b190418e") center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #ff6a00;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            line-height: 1.6;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fafafa;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.03);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .product div {
+            padding: 15px;
+        }
+
+        .product h3 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6a00;
+        }
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact form button {
+            background: #ff6a00;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .contact {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Obramax Atacado de Construção</h1>
+    <nav>
+        <a href="#sobre">Quem Somos</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Construção com qualidade e preço baixo</h2>
+    <p>Atacado e varejo de materiais de construção para profissionais e empresas</p>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre" class="about">
+    <h2>Quem Somos</h2>
+    <p>
+        A <strong>Obramax Atacado de Construção</strong>, razão social
+        <strong>BMB Material de Construção S.A.</strong>, atua desde 2015 no mercado
+        brasileiro oferecendo uma ampla linha de materiais de construção com
+        foco em qualidade, estoque imediato e preços competitivos.
+    </p>
+    <p>
+        Somos especializados no atendimento a construtoras, empreiteiros,
+        profissionais da construção civil e clientes finais, sempre com
+        transparência, eficiência e compromisso.
+    </p>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos">
+    <h2>Produtos em Destaque</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62">
+            <div>
+                <h3>Cimento CP II 50kg</h3>
+                <p>Cimento de alta resistência para obras em geral.</p>
+                <p class="price">R$ 38,90</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <div>
+                <h3>Tijolo Cerâmico</h3>
+                <p>Tijolo cerâmico estrutural de alta durabilidade.</p>
+                <p class="price">R$ 1,29 / un</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <div>
+                <h3>Areia Média Lavada</h3>
+                <p>Indicada para concreto e assentamentos.</p>
+                <p class="price">R$ 120,00 / m³</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da">
+            <div>
+                <h3>Argamassa AC II</h3>
+                <p>Ideal para assentamento de pisos e revestimentos.</p>
+                <p class="price">R$ 22,50</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+    <h2>Contato</h2>
+
+    <div class="contact">
+        <div>
+            <p><strong>Endereço:</strong><br>
+            Av. da Liberdade, 823 – São Paulo/SP</p>
+
+            <p><strong>Telefone:</strong><br>
+            (11) 2210-0000</p>
+
+            <p><strong>E-mail:</strong><br>
+            contato@obramax.com.br</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea rows="5" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Obramax Atacado de Construção – Todos os direitos reservados</p>
+    <p>CNPJ: 23.476.033/0001-08</p>
+</footer>
+
+</body>
+</html>
 
